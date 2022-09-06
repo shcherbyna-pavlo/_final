@@ -1,0 +1,92 @@
+.brand {
+    max-width: 1440px;
+    margin: 42px auto 0;
+
+    .mobile-none {
+
+        @media (max-width:767px) {
+            display: none;
+        }
+    }
+
+    text-align: center;
+
+    &__h3-caps {
+        margin: 0 0 30px;
+        color: $h3-caps;
+    }
+
+    &__grid-box {
+        margin: 0 auto;
+
+        @media (min-width:768px) {
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(4, 120px);
+        }
+
+        @media (min-width:992px) {
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(3, 120px);
+        }
+    }
+
+    &__img {
+        display: block;
+        position: relative;
+        overflow: hidden;
+        height: 120px;
+        max-width: 100%;
+
+        &:hover img {
+            transform: scale(1.2);
+        }
+
+        img {
+           width: 100%;
+           height: 100%;
+           object-fit: none;
+           object-position: 50% 50%;
+           max-width: none;
+           transition: all .8s;
+        }
+    }
+}
+
+.hillel {
+    background: $hillel;
+}
+.wannabiz {
+    background: $wannabiz;
+}
+.targerine {
+    background: $targerine;
+}
+.d_look {
+    background: $d_look;
+}
+.orangear {
+    background: $orangear;
+}
+.adtelligent {
+    background: $adtelligent;
+}
+.clickky {
+    background: $clickky;
+}
+.eco-leasing {
+    background: $eco-leasing;
+}
+.infratek {
+    background: $infratek;
+}
+.city-park {
+    background: $city-park;
+}
+.art-print_studio {
+    background: $art-print_studio;
+}
+.ultimate_card {
+    background: $ultimate_card;
+}

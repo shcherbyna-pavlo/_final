@@ -1,0 +1,153 @@
+body {
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+}
+
+.container {
+    max-width: 798px;
+    margin: 0 auto;
+    padding: 0 30px;
+
+    @media (min-width:768px) {
+        max-width: 1440px;
+        padding: 0 60px;
+    }
+}
+
+img {
+    vertical-align: top;
+    max-width: 100%;
+    height: auto;
+}
+
+#wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+}
+
+main {
+    flex-grow: 1;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+h2,
+h3,
+h4 {
+    font-weight: 700;
+    margin: 0;
+}
+
+h2 {
+    font-size: 20px;
+    line-height: 24px;
+
+    @media (min-width:768px) {
+        font-size: 30px;
+        line-height: 37px;
+    }
+}
+
+h3 {
+    font-size: 22px;
+    line-height: 27px;
+}
+
+h4 {
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.hero-mobile {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 37px;
+}
+
+.hero {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 37px;
+    
+    @media (min-width:768px) {
+        font-weight: 700;
+        font-size: 38px;
+        line-height: 46px;
+    }
+}
+
+.symbol__text-pos{
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 46px;
+}
+
+.h3-caps {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+address {
+    font-style: normal
+}
+
+blockquote {
+    margin: 0;
+}
+
+.back {
+    display: block;
+    position: fixed;
+    bottom: 30px;
+    right: 50px;
+    width: 50px;
+    height: 50px;
+    background: $back-bg;
+    z-index: 1;
+    font-size: 0;
+    border-radius: 50%;
+    box-shadow: 0 0 15px $back-shadov;
+
+    &:after {
+        content: "";
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        border: 5px solid $basic_white;
+        top: 40%;
+        left: 50%;
+        transform: translateX(-50%) rotate(45deg);
+        border-right: transparent;
+        border-bottom: transparent;
+    }
+}
+
+.tel-hov {
+    transition: all .8s;
+
+    &:hover {
+        color: $accent;
+    }
+}
