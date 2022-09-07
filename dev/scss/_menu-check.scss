@@ -65,6 +65,10 @@
       overflow: auto;
       margin: 0 -30px;
 
+      @media (min-width:768px) {
+         margin: 0 -60px;
+      }
+
       @media (min-width:992px) {
          flex-direction: column;
          padding: 0 60px 0 0;
@@ -72,6 +76,7 @@
          border-bottom: transparent;
          text-align: end;
          margin: 0;
+         overflow: inherit;
       }
    }
 
