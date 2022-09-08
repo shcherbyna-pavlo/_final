@@ -155,7 +155,7 @@
         display: flex;
         padding: 10px 0;
         max-width: 100%;
-        
+
         &-contact {
             display: flex;
             align-items: center;
@@ -195,7 +195,6 @@
         line-height: 15px;
         letter-spacing: 1px;
         display: inline-block;
-        
     }
 
     &__lang-link {
@@ -215,7 +214,6 @@
                 background: $lang-link--active;
             }
         }
-
     }
 
     &__contact-link {

@@ -40,7 +40,7 @@
       width: 87px;
       color: $btn-color;
       transition: all .8s;
-      
+
       &:after {
          content: '';
          display: block;
@@ -59,6 +59,7 @@
       &:hover {
          color: $btn-color--hover;
       }
+
       &:hover:after {
          border: 2px solid $btn-color--hover;
          border-left: transparent;
@@ -93,7 +94,7 @@
       font-size: 14px;
       line-height: 22px;
       color: $team__position;
-      
+
       @media (min-Width:768px) {
          padding-top: 6px;
       }
