@@ -60,52 +60,70 @@
                         <span class="symbol__text-pos">you legal solutions provider</span>
                         <a href="#check" class="symbol__btn-pos"><span class="symbol__arrow">a</span></a>
                     </div>
-                    <div id="check" class="menu-check">
-                        <input id="cons" name="chek" type="radio" checked>
-                        <input id="cust" name="chek" type="radio">
-                        <input id="innov" name="chek" type="radio">
-                        <input id="busin" name="chek" type="radio">
-                        <div class="menu-check__list menu-check__swiper">
-                            <label class="hero menu-check__click" for="cons">Consistent</label>
-                            <label class="hero menu-check__click" for="cust">Customer oriented</label>
-                            <label class="hero menu-check__click" for="innov">Innovative</label>
-                            <label class="hero menu-check__click" for="busin">Business oriented</label>
+                    <div id="check" class="menu-swip">
+                        <div thumbsSlider="" class="swiper mySwiper2">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide hero">
+                                    <p>Consistent</p>
+                                </div>
+                                <div class="swiper-slide hero">
+                                    <p>Customer oriented</p>
+                                </div>
+                                <div class="swiper-slide hero">
+                                    <p>Innovative</p>
+                                </div>
+                                <div class="swiper-slide hero">
+                                    <p>Business oriented</p>
+                                </div>
+                            </div>
                         </div>
-                        <div class="menu-check__body">
-                            <div class="cons radio">
-                                <h2 class="menu-check__title">We turn the idea of legal services</h2>
-                                <p>
-                                    Consolidating many years of experience and practice, the
-                                    company's lawyers accompany complex projects and
-                                    achieve a number of important decisions for the industry.
-                                    Many of them form the practice of applying the law of the
-                                    sea in Ukraine.
-                                </p>
+                        <div class="swiper mySwiper3">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="wrapp-text">
+                                        <h3 class="mySwiper3__title">We turn the idea of legal services</h3>
+                                        <p>
+                                            Consolidating many years of experience and practice, the
+                                            company's lawyers accompany complex projects and
+                                            achieve a number of important decisions for the industry.
+                                            Many of them form the practice of applying the law of the
+                                            sea in Ukraine.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="wrapp-text">
+                                        <h3 class="mySwiper3__title">We turn the idea of legal services</h3>
+                                        <p>
+                                            Consolidating many years of experience and practice, the
+                                            company's lawyers accompany complex projects and
+                                            achieve a number of important decisions for the industry.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="wrapp-text">
+                                        <h3 class="mySwiper3__title">We turn the idea of </h3>
+                                        <p>
+                                            Consolidating many years of experience and practice, the
+                                            company's lawyers accompany complex projects and
+                                            achieve
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="wrapp-text">
+                                        <h3 class="mySwiper3__title">We turn the idea of legal services</h3>
+                                        <p>
+                                            Consolidating many years of experience and practice, the
+                                            company's lawyers accompany complex projects and
+                                            achieve a number of important decisions for the industry.
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="cust radio">
-                                <h2 class="menu-check__title">We turn the idea of legal services</h2>
-                                <p>
-                                    Consolidating many years of experience and practice, the 
-                                    company's lawyers accompany complex projects and 
-                                    achieve a number of important decisions for the industry.
-                                </p>
-                            </div>
-                            <div class="innov radio">
-                                <h2 class="menu-check__title">We turn the idea of </h2>
-                                <p>
-                                    Consolidating many years of experience and practice, the 
-                                    company's lawyers accompany complex projects and 
-                                    achieve
-                                </p>
-                            </div>
-                            <div class="busin radio">
-                                <h2 class="menu-check__title">We turn the idea of legal services</h2>
-                                <p>
-                                    Consolidating many years of experience and practice, the 
-                                    company's lawyers accompany complex projects and 
-                                    achieve a number of important decisions for the industry. 
-                                </p>
-                            </div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
                         </div>
                     </div>
                     <div class="line-cards">
@@ -367,12 +385,39 @@
     </div>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script>
-        const swiper = new Swiper('.mySwiper', {
+        const swiper3 = new Swiper('.mySwiper', {
             loop: true,
 
             pagination: {
                 el: '.swiper-pagination',
                 clickable: true,
+            },
+        });
+
+        var swiper = new Swiper(".mySwiper2", {
+            
+            slidesPerView: 1,
+
+            breakpoints: {
+                600: {
+                    slidesPerView: 2
+                },
+
+                992: {
+                    slidesPerView: 4
+                }
+            },
+        });
+            var swiper2 = new Swiper(".mySwiper3", {
+            spaceBetween: 10,
+
+            navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+            },
+
+            thumbs: {
+              swiper: swiper,
             },
         });
     </script>
