@@ -124,7 +124,7 @@
 
    &:after {
       color: $accent;
-      text-shadow: 0 0 5px rgba(36, 163, 255, 0.8);
+      text-shadow: 0 0 5px $swipe-after--shadow;
    }
 
    @media (min-width:992px) {
